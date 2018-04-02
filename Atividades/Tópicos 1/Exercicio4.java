@@ -1,35 +1,26 @@
 package integracao2018;
 
-import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStreamReader;
 
-public class Exercicio3 {
+public class Exercicio4 {
 
 	public static void main(String[] args) throws IOException {
 
 		/*
-		 * Escreva um programa (linha de comandos) que exibe o conteúdo de arquivo
-		 * texto, formato UTF-8, na saída padrão. O único argumento é o nome do arquivo
-		 * a ser exibido.
+		 * Escreva um programa (linha de comandos) cujo primeiro argumento é o nome de
+		 * um arquivo e cujo segundo argumento é uma sequência de caracteres. Quando
+		 * executado, a sequência de caracteres fornecida como o segundo argumento é
+		 * persistida no arquivo cujo nome é fornecido como primeiro argumento. O texto
+		 * deve ser persistido no formato UTF-8.
 		 */
 
 		// Get the input file and data
 		File file = new File(args[0]);
 		FileInputStream fis = new FileInputStream(file);
-		InputStreamReader isr = new InputStreamReader(fis, "UTF-8");
 		StringBuffer sb = new StringBuffer();
-		BufferedReader br = new BufferedReader(isr);
-		
-		String linha;
-		while ((linha = br.readLine()) != null) {
-		   System.out.println(linha);
-		}
-		
-		br.close();
-		// 
+
 		try {
 			int ch;
 			while ((ch = fis.read()) != -1) {
