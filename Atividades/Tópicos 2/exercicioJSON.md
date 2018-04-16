@@ -27,10 +27,10 @@ O único problema é o uso do ***nil*** (marcado em vermelho), deveria ter sido 
 #### 4. Qual seria um possível arquivo JSON contendo dados correspondentes a uma instância de um objeto da classe Bicycle (disponível [aqui](https://docs.oracle.com/javase/tutorial/java/javaOO/classes.html)) ?
 
 ```json
-Bicycle {
-    "cadence": number, 
-    "gear": number,
-    "speed": number,
+type Bicycle {
+    "cadence": null, 
+    "gear": null,
+    "speed": null
 }
 ```
 
@@ -45,7 +45,7 @@ Bicycle {
 {
     "cidades": ["Goiânia", "Trindade"], 
     "salada": "alface",
-    "sabor": null,
+    "sabor": null
 }
 ```
     
