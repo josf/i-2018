@@ -50,3 +50,28 @@ type Bicycle {
 }
 ```
     
+#### 6.  Exercite os serviços oferecidos por esse portal.
+Brinquei com algumas possibilidades que o portal oferece, a resposta de curl -v foi:
+```json
+StatusCode        : 200
+StatusDescription : OK
+Content           : {
+                       "X-Cloud-Trace-Context": "9936fc2748581d9dc0fcd0592b4bc5e1/3511275235519081753",
+                       "Host": "headers.jsontest.com",
+                       "User-Agent": "Mozilla/5.0 (Windows NT; Windows NT 10.0; pt-BR) WindowsPower...
+RawContent        : HTTP/1.1 200 OK
+                    Access-Control-Allow-Origin: *
+                    X-Cloud-Trace-Context: 9936fc2748581d9dc0fcd0592b4bc5e1
+                    Content-Length: 223
+                    Content-Type: application/json; charset=ISO-8859-1
+                    Date: Tue, 17 Apr 201...
+Forms             : {}
+Headers           : {[Access-Control-Allow-Origin, *], [X-Cloud-Trace-Context, 9936fc2748581d9dc0fcd0592b4bc5e1],
+                    [Content-Length, 223], [Content-Type, application/json; charset=ISO-8859-1]...}
+Images            : {}
+InputFields       : {}
+Links             : {}
+ParsedHtml        : System.__ComObject
+RawContentLength  : 223
+```
+
