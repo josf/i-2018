@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package integracao2018.Topicos2;
+package com.github.josneyo.i2018.topicos2;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -14,13 +14,13 @@ import java.io.Serializable;
  *
  * @author Pichau
  */
-public class Serializacao implements Serializable {
+public class Serialize implements Serializable {
 
     private NotSerializable notsrz;
 
     public static void main(String[] args) {
 
-        Serializacao srz = new Serializacao();
+        Serialize srz = new Serialize();
 
         try {
             srz.notsrz = new NotSerializable();
@@ -30,7 +30,7 @@ public class Serializacao implements Serializable {
         }
     }
 
-    private static int TamanhoEmBytes(Serializable s) throws IOException {
+    private static int TamanhoEmBytes(Serialize s) throws IOException {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         ObjectOutputStream oos = new ObjectOutputStream(baos);
 

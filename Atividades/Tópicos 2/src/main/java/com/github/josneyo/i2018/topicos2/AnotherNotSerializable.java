@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package integracao2018;
+package com.github.josneyo.i2018.topicos2;
 
 import java.io.*;
 
@@ -11,7 +11,7 @@ import java.io.*;
  *
  * @author Pichau
  */
-public class NotSerializable implements Serializable {
+public class AnotherNotSerializable implements Serializable {
     public String name;
     public String color;
     public int number;

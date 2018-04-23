@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package integracao2018;
+package com.github.josneyo.i2018.topicos2;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -21,7 +21,7 @@ public class Serializacao implements Serializable {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
         byte[] aux;
 
-        NotSerializable notsrz = new NotSerializable(); //Gera o erro
+        AnotherNotSerializable notsrz = new AnotherNotSerializable(); //Gera o erro
         notsrz.name = "Testador";
         notsrz.color = "Blue";
         notsrz.number = 101;
@@ -47,7 +47,7 @@ public class Serializacao implements Serializable {
         ByteArrayInputStream baos = new ByteArrayInputStream(s);
         ObjectInputStream ois = new ObjectInputStream(baos);
 
-        NotSerializable exx = (NotSerializable) ois.readObject();
+        AnotherNotSerializable exx = (AnotherNotSerializable) ois.readObject();
         
         ois.close();
         
