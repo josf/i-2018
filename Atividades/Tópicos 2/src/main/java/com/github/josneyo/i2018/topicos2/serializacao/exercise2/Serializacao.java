@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.github.josneyo.i2018.topicos2;
+package com.github.josneyo.i2018.topicos2.serializacao.exercise2;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;

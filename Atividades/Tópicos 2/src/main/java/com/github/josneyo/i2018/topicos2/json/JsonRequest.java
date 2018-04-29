@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.github.josneyo.i2018.topicos2;
+package com.github.josneyo.i2018.topicos2.json;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -43,11 +43,11 @@ public class JsonRequest {
                 urlString += current;
             }
 
-            // convert JSON string to Map
+            // Convert JSON string to Map
             ObjectMapper mapper = new ObjectMapper();
             Map<String, Object> map = new HashMap<String, Object>();
             map = mapper.readValue(urlString, new TypeReference<Map<String, String>>() {});
-            //
+            // Put JSON onto a object and Display it
             Object a = new Object();
             String pureLink = map.put("avatar_url", a).toString();
             System.out.println(pureLink);
